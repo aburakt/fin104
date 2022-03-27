@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Business Frontpage - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="bg-dark">
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#!"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center my-5">
+                            <h1 class="display-5 fw-bolder text-white mb-5">FİN104 Bütçe Tahminleme Aracına Hoşgeldiniz!</h1>
+                            <div class="row lead text-white mb-4">
+                                <div class="col-12">
+                                    Kurum Verileri Seçiniz: <button type="button" class="btn btn-sm btn-primary">Dosya Seç <i class="bi bi-cloud-arrow-up-fill"></i></button></div>
+                            </div>
+                            <div class="lead text-white-50 mb-4">
+                                <select class="form-select" size="10" aria-label="size 3 select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                            </div>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-show"><i class="bi bi-arrows-fullscreen"></i> Görüntüle</button>
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal-edit"><i class="bi bi-pencil-square"></i> Düzenle</button>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-algorithm">Algoritmayı Çalıştır <i class="bi bi-gear-wide-connected"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Footer-->
+        <footer class="py-3 bg-light fixed-bottom">
+            <div class="container px-5"><p class="m-0 text-center text-dark">Copyright &copy; FİN104 2022</p></div>
+        </footer>
+        <!-- Modal Show -->
+        <div class="modal fade" id="modal-show" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Verileri Görüntüle</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Cari Yıl</th>
+                                    <th scope="col">Personel Giderleri</th>
+                                    <th scope="col">Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri</th>
+                                    <th scope="col">Mal ve Hizmet Alım Giderleri</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">2020</th>
+                                    <td>167914944,4</td>
+                                    <td>20504536,56</td>
+                                    <td>10947507,51</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2019</th>
+                                    <td>150614220,7</td>
+                                    <td>18444600,41</td>
+                                    <td>@11603356,82</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2018</th>
+                                    <td>121458636,2</td>
+                                    <td>@14649093,89</td>
+                                    <td>12605867,04</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Modal Edit -->
+        <div class="modal fade" id="modal-edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Verileri Düzenle</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Filtre Kelimesi" aria-label="Filtre Kelimesi" aria-describedby="button-addon2">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Filtrele <i class="bi bi-filter-circle"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-3 offset-6">
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-primary"><i class="bi bi-pencil-square"></i> Düzenle</button>
+                                <button type="button" class="btn btn-success"><i class="bi bi-save-fill"></i> Kaydet</button>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Cari Yıl</th>
+                                    <th scope="col">Personel Giderleri</th>
+                                    <th scope="col">Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri</th>
+                                    <th scope="col">Mal ve Hizmet Alım Giderleri</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">2020</th>
+                                    <td>167914944,4</td>
+                                    <td>20504536,56</td>
+                                    <td>10947507,51</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2019</th>
+                                    <td>150614220,7</td>
+                                    <td>18444600,41</td>
+                                    <td>@11603356,82</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2018</th>
+                                    <td>121458636,2</td>
+                                    <td>@14649093,89</td>
+                                    <td>12605867,04</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Modal Algorithm -->
+        <div class="modal fade" id="modal-algorithm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered  modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Modal Algorithm</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Filtre Kelimesi" aria-label="Filtre Kelimesi" aria-describedby="button-addon2">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Filtrele <i class="bi bi-filter-circle"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-3 offset-6">
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-primary"><i class="bi bi-pencil-square"></i> Düzenle</button>
+                                <button type="button" class="btn btn-success"><i class="bi bi-save-fill"></i> Kaydet</button>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Cari Yıl</th>
+                                    <th scope="col">Personel Giderleri</th>
+                                    <th scope="col">Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri</th>
+                                    <th scope="col">Mal ve Hizmet Alım Giderleri</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">2020</th>
+                                    <td>167914944,4</td>
+                                    <td>20504536,56</td>
+                                    <td>10947507,51</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2019</th>
+                                    <td>150614220,7</td>
+                                    <td>18444600,41</td>
+                                    <td>@11603356,82</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2018</th>
+                                    <td>121458636,2</td>
+                                    <td>@14649093,89</td>
+                                    <td>12605867,04</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-12">
+                            <div class="row row-cols-1 row-cols-md-2 g-4">
+                                <div class="col">
+                                  <div class="card">
+                                    <img src="/assets/img/yogunluk.png" class="card-img-top" alt="..." style="max-width: 50rem;">
+                                    <div class="card-img-overlay">
+                                      <h5 class="card-title">Yoğunluk Grafiği</h5>
+                                      <!--<p class="card-text">if i wanna add text here</p>-->
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="card">
+                                    <img src="assets/img/kutu.png" class="card-img-top" alt="..." style="max-width: 50rem;">
+                                    <div class="card-img-overlay">
+                                      <h5 class="card-title">Kutu Grafiği</h5>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="card">
+                                    <img src="assets/img/zaman.png" class="card-img-top" alt="..." style="max-width: 50rem;">
+                                    <div class="card-img-overlay">
+                                      <h5 class="card-title">Zaman Serisi Grafiği</h5>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="card">
+                                    <img src="assets/img/sutun.png" class="card-img-top" alt="..." style="max-width: 50rem;">
+                                    <div class="card-img-overlay">
+                                      <h5 class="card-title">Sütun Grafiği</h5>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
